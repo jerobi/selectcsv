@@ -1,0 +1,44 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>mspull</title>
+    <style type="text/css">
+      body {
+          margin: 10px;
+          white-space: nowrap;
+          width:1200px;
+      }
+
+      h1 {
+          font-size: 15px;
+      }
+
+      #contents {
+          height: 10px;
+          visibility: hidden;
+          overflow: hidden;
+      }
+    </style>
+
+    <script src="jquery-3.1.0.js"></script>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <h1>Download as CSV</h1>
+    <div id="contents">
+    </div>
+    <div id="container">
+        <table id="parsed">
+        </table>
+        <div id="download">
+        </div>
+    </div>
+    
+  </body>
+</html>
